@@ -1,8 +1,8 @@
-import _ from 'lodash';
-import $ from 'jquery';
+// import _ from 'lodash';
+// import $ from 'jquery';
 import User from './user'
 
-window.User = User;
+// window.User = User;
 
 function component() {
   let element = document.createElement('div');
@@ -13,10 +13,14 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+// document.body.appendChild(component());
 
-let x = new User();
+let u = new User();
 
-x.setName('john doe');
+console.log(u);
 
-console.log(x.getName())
+u.setFirstName('Aaron');
+
+u.setLastName('Pampolino');
+
+console.log(u, u.getFullName());

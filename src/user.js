@@ -1,15 +1,20 @@
-function User(){
-    
-    this.name = '',
+class User {
 
-    this.setName = function(name) {
+    constructor() {
+        this.firstname = null;
+        this.lastname = null;
+    }
 
-        this.name = name;
-    };
+    setFirstName(firstname) {
+        this.firstname = firstname;
+    }
 
-    this.getName = function() {
-        
-        return this.name
+    setLastName(lastname) {
+        this.lastname = lastname;
+    }
+
+    getFullName() {
+        return this.firstname + ' ' + this.lastname;
     }
 }
 
