@@ -1,9 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Getting Started</title>
   </head>
   <body>
-    <script src="dist/bundle.js"></script>
+    <div id="app">
+        <div>{{ message }}</div>
+        <ul>
+            <todo-item v-for="todo in todos" v-bind:key="todo.id" v-bind:todo="todo"></todo-item>
+        </ul>
+    </div>
+    <script type="text/javascript" src="dist/bundle.js"></script>
   </body>
 </html>
